@@ -14,7 +14,6 @@ export default function HeroSection() {
         <div className="w-full px-4 sm:px-6 lg:px-8 mt-0 md:mt-10 mb-16">
           <CTA />
         </div>
-
         <Thinkers />
       </div>
     </section>
