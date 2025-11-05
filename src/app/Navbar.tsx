@@ -71,7 +71,7 @@ export default function Navbar() {
             >
               <div className="relative w-6 h-6">
                 <Image
-                  src={isOpen ? "/close.svg" : "/hamburger.svg"}
+                  src={isOpen ? "/navbar/close.svg" : "/navbar/hamburger.svg"}
                   alt="menu icon"
                   fill
                   className="object-contain"
@@ -108,7 +108,7 @@ export default function Navbar() {
                   Sign&nbsp;up&nbsp;now
                   <div className="relative h-8 w-8">
                     <Image
-                      src="/iconoir-arrow-up-right.svg"
+                      src="/navbar/iconoir-arrow-up-right.svg"
                       alt="arrow icon"
                       fill
                       className="object-contain"
