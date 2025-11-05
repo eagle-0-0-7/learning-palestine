@@ -1,5 +1,5 @@
 import CTA from "../components/CTA";
-// import Thinkers from "../thinkers/page";
+import Thinkers from "../thinkers/page";
 
 export default function HeroSection() {
   return (
@@ -15,7 +15,7 @@ export default function HeroSection() {
           <CTA />
         </div>
 
-        {/* <Thinkers /> */}
+        <Thinkers />
       </div>
     </section>
   );

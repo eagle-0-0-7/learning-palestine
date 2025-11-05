@@ -28,10 +28,7 @@ export const TopicTabs = () => {
         <nav
             role="tablist"
             aria-label="Topic navigation tabs"
-            className="
-        flex justify-center gap-1 sm:gap-4 w-full border-b border-gray-200
-        overflow-x-auto whitespace-nowrap no-scrollbar
-      "
+            className="flex justify-center gap-1 sm:gap-4 w-full border-b border-gray-200 overflow-x-auto whitespace-nowrap no-scrollbar"
         >
             {tabs.map((tab) => {
                 const isActive = tab.id === activeTab;
@@ -41,19 +38,10 @@ export const TopicTabs = () => {
                     <button
                         key={tab.id}
                         disabled={isDisabled}
-                        className={`
-    flex items-center gap-1 sm:gap-2
-    px-2 py-1 sm:px-4 sm:py-2
-    rounded-t-lg text-xs sm:text-base
-    transition-all
-    ${
-                            isActive
-                                ? "border-b-2 border-[#0066FF] text-[#0066FF] bg-[#E6F0FF]"
-                                : "text-[#6B7280]"
-                        }
-    ${isDisabled ? "cursor-default opacity-90" : ""}
-  `}
-                    >
+                        className={`flex items-center gap-1 sm:gap-2 px-2 py-1 sm:px-4 sm:py-2 rounded-t-lg text-xs sm:text-base transition-all 
+                            ${isActive ? "border-b-2 border-[#0066FF] text-[#0066FF] bg-[#E6F0FF]" : "text-[#6B7280]"} 
+                            ${isDisabled ? "cursor-default opacity-90" : ""}
+                        `}>
                         <div className="relative w-4 h-4 sm:w-6 sm:h-6 flex-shrink-0">
                             <Image
                                 src={tab.icon}
