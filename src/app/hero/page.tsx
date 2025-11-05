@@ -1,11 +1,12 @@
 import CTA from "../components/CTA";
-import Thinkers from "../thinkers/page";
+// import Thinkers from "../thinkers/page";
 
 export default function HeroSection() {
   return (
     <section
-      className="relative min-h-[99vh] w-full bg-no-repeat bg-cover bg-center bg-[url('/background-gradient.svg')] overflow-visible pb-12 md:pb-28"
-      style={{ backgroundImage: "url('/background-gradient.svg')" }}
+          className="w-full overflow-visible pb-12 md:pb-28"
+    //   className="relative min-h-[99vh] w-full bg-no-repeat bg-cover bg-center bg-[url('/background-gradient.svg')] overflow-visible pb-12 md:pb-28"
+    //   style={{ backgroundImage: "url('/background-gradient.svg')" }}
     >
       <div className="container mx-auto flex flex-col px-6 pt-28">
 
@@ -14,7 +15,7 @@ export default function HeroSection() {
           <CTA />
         </div>
 
-        <Thinkers />
+        {/* <Thinkers /> */}
       </div>
     </section>
   );
