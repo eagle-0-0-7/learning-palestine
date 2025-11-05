@@ -13,6 +13,12 @@ export default function Navbar() {
 
   const router = useRouter();
 
+  const handleMobileSignUp = () => {
+    console.log('here')
+    router.push("/signup");
+    setIsOpen(!isOpen);
+  };
+
   return (
     <header className="fixed inset-x-0 top-0 z-50">
       <div className="border-b border-white/15 bg-black/5 md:bg-black/19 backdrop-blur-lg">
@@ -101,7 +107,7 @@ export default function Navbar() {
               {/* Mobile CTA */}
               <button
                 type="button"
-                onClick={() => router.push("/signup")}
+                onClick={() => handleMobileSignUp()}
                 className="inline-flex items-center gap-3 rounded-full bg-[#865CD0] border-transparent pl-6 pr-2 py-1 text-white"
               >
                 <span className="flex items-center gap-2 font-manrope text-base font-bold">

@@ -17,14 +17,14 @@ export default function CTA() {
     shadow-[0_20px_60px_rgba(134,92,208,0.15),0_16px_40px_rgba(0,0,0,0.05)]
   ">
       {/* ✅ Background image for proper LCP discovery */}
-      <Image
-        src="/footer/CTA-BG.svg"
+      {/* <Image
+        src="/CTA-BG.svg"
         alt="Background decorative gradient"
         fill
         priority
         fetchPriority="high"
         className="object-cover rounded-[32px] -z-10"
-      />
+      /> */}
       <div className="flex flex-col items-center justify-center text-center gap-8 w-full max-w-2xl mx-auto">
         <h2 className="font-poppins font-semibold text-[#002B6B] text-3xl sm:text-4xl md:text-[40px] md:leading-[48px]">
           Join bold learners and explore Palestine 101 together.
