@@ -13,7 +13,7 @@ export default function Home() {
         fill
         priority
         fetchPriority="high"
-        className="rounded-[32px] min-h-[99vh] -z-1"
+        className="rounded-[32px] min-h-[50vh] md:min-h-[99vh] -z-1"
       />
       <HeroSection />
       <VideoSection />
