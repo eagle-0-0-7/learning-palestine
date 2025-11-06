@@ -27,6 +27,7 @@ export default function Footer() {
   return (
     <footer className="relative w-full -mt-24 sm:-mt-16 md:-mt-20 px-8 md:px-10 bg-transparent text-center ">
       {/* Bottom bar */}
+      
       <div className="flex flex-col sm:flex-row items-center justify-between w-full border-t border-white/40 pt-6 gap-4">
         {/* Left copyright */}
         <p className="text-sm text-[#5112C1] text-center sm:text-left">

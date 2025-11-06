@@ -3,6 +3,7 @@ import { Lexend, Manrope, Poppins, Roboto } from "next/font/google";
 import "./globals.css";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import Image from "next/image";
 
 const roboto = Roboto({
   subsets: ["latin"],

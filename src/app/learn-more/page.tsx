@@ -6,8 +6,7 @@ export default function LearnMorePage() {
     <main
       role="main"
       aria-labelledby="pageTitle"
-      className="flex flex-col w-full items-center justify-center"
-      // style={{ backgroundImage: "url('/background-gradient.svg')" }}
+      className="flex flex-col w-full items-center justify-center bg-[#ededed]"
     >
       {/* Learn More Summary Section */}
       <section className="flex flex-col items-center text-center gap-4 sm:gap-6 pt-28 pb-20 md:pb-28 px-6">
@@ -79,8 +78,7 @@ export default function LearnMorePage() {
 
       {/* P101 Curriculum Journey with bottom gradient */}
       <section
-        className="w-full pb-24 px-6 bg-white rounded-3xl bg-no-repeat bg-cover bg-bottom"
-        style={{ backgroundImage: "url('/footer/footer-bg.svg')" }}
+        className="w-full pb-24 px-6 rounded-3xl"
       >
         <h3 className="text-2xl sm:text-3xl font-poppins text-center text-[#002B6B] mb-12 ">
           The Palestine&nbsp;101 Curriculum Journey
