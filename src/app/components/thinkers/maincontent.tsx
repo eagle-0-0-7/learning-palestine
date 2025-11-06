@@ -18,7 +18,7 @@ const scholarProfiles: ScholarProfile[] = [
     title: "Historian / Genocide Scholar",
     institution: "Stockton University",
     avatar: "/thinkers/sagal.webp",
-    tags: ["Holocaust", "Genociden", "Studies"],
+    tags: ["Holocaust", "Genocide", "Studies"],
   },
   {
     id: 2,

@@ -13,14 +13,6 @@ export const Explore = () => {
         <Global />
         <EventCardsList />
       </div>
-      {/* <Image
-        src="/footer/footer-bg.svg"
-        alt="Background decorative gradient"
-        fill
-        priority
-        fetchPriority="high"
-        className="hidden object-cover rounded-[32px]"
-      /> */}
     </div>
   );
 };
