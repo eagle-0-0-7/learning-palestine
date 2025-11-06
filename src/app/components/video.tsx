@@ -3,29 +3,8 @@ import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 export default function VideoSection() {
-  const [videoUrl, setVideoUrl] = useState<string | null>(null);
-
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const [hasPlayed, setHasPlayed] = useState(false);
-
-  // 🔹 Fetch the signed Supabase video URL
-  useEffect(() => {
-    async function fetchVideoUrl() {
-      try {
-        const res = await fetch("/api/video");
-        const data = await res.json();
-        if (data.url) {
-          setVideoUrl(data.url);
-        } else {
-          console.error("No URL in response:", data);
-        }
-      } catch (err) {
-        console.error("Failed to fetch video URL:", err);
-      }
-    }
-
-    fetchVideoUrl();
-  }, []);
 
   useEffect(() => {
     const videoEl = videoRef.current;
@@ -55,7 +34,7 @@ export default function VideoSection() {
       observer.disconnect();
       videoEl.removeEventListener("ended", handleEnded);
     };
-  }, [hasPlayed, videoUrl]);
+  }, [hasPlayed]);
 
   return (
     <section className="
@@ -72,31 +51,22 @@ export default function VideoSection() {
         className="absolute inset-0"
       >
         {/* Responsive video */}
-        {videoUrl
-          ? (
-            <video
-              ref={videoRef}
-              className="
-                absolute inset-0 w-full h-full
-                object-contain sm:object-contain md:object-contain lg:object-cover
-                bg-black
-              "
-              src={videoUrl}
-              preload="none"
-              muted
-              playsInline
-              poster="/rectangle-22-3.webp"
-              controls={false}
-            >
-              Your browser does not support the video tag.
-            </video>
-          )
-          : (
-            <div className="flex items-center justify-center h-full text-white text-sm tracking-wide">
-              Loading video...
-            </div>
-          )}
-
+          <video
+            ref={videoRef}
+            className="
+              absolute inset-0 w-full h-full
+              object-contain sm:object-contain md:object-contain lg:object-cover
+              bg-black
+            "
+            src="/P101_final.mp4"
+            preload="none"
+            muted
+            playsInline
+            poster="/rectangle-22-3.webp"
+            controls={false}
+          >
+            Your browser does not support the video tag.
+          </video>
         {/* Overlay gradient */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
       </motion.div>
