@@ -1,6 +1,6 @@
 import EventCardsList from "./events/eventcardlist";
 import Global from "./global";
-import Image from "next/image";
+// import Image from "next/image";
 
 export const Explore = () => {
   return (
@@ -13,14 +13,14 @@ export const Explore = () => {
         <Global />
         <EventCardsList />
       </div>
-      <Image
+      {/* <Image
         src="/footer/footer-bg.svg"
         alt="Background decorative gradient"
         fill
         priority
         fetchPriority="high"
-        className="object-cover rounded-[32px]"
-      />
+        className="hidden object-cover rounded-[32px]"
+      /> */}
     </div>
   );
 };
