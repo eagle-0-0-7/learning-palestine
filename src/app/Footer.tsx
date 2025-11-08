@@ -30,11 +30,11 @@ export default function Footer() {
       <div className="flex flex-col sm:flex-row items-center justify-between w-full border-t border-white/40 pt-6 gap-4">
         {/* Left copyright */}
         <p className="text-sm text-[#5112C1] text-center sm:text-left">
-          ©2025 All rights reserved
+          © GHTech. 2025 All rights reserved
         </p>
 
         {/* Dynamic social icons */}
-        <div className="flex items-center justify-center gap-8">
+        {/* <div className="flex items-center justify-center gap-8">
           {socialLinks.map((social) => (
             <a
               key={social.name}
@@ -55,7 +55,7 @@ export default function Footer() {
               </div>
             </a>
           ))}
-        </div>
+        </div> */}
       </div>
     </footer>
   );
