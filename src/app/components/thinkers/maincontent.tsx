@@ -50,7 +50,7 @@ const scholarProfiles: ScholarProfile[] = [
     title: "Historian & Radical Scholar",
     institution: "UC Irvine",
     avatar: "/thinkers/rasul.webp",
-    tags: ["Islamic Law", "Culture", "Empire"],
+    tags: ["International", "Africa", "Thought"],
   },
 ];
 
